@@ -17,8 +17,7 @@ const userSchema = new mongoose.Schema({
     },
 
     contact: {
-        type: Number,
-        required: true
+        type: Number
     },
 
     role:{
@@ -29,5 +28,6 @@ const userSchema = new mongoose.Schema({
 }, {
     timestamps: true
 })
+
 
 module.exports = mongoose.model("user", userSchema)
